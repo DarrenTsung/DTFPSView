@@ -81,7 +81,7 @@ Shader "UI/Custom/Graph"
 			fixed4 _TextureSampleAdd;
 			float4 _ClipRect;
 
-			static const int QUEUE_SIZE = 256;
+			const int QUEUE_SIZE = 200;
 
 			float _PercentageQueue[QUEUE_SIZE];
 			int _HeadIndex;

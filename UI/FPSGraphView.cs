@@ -6,7 +6,8 @@ using UnityEngine.UI;
 namespace DTFPSView.Internal {
 	public class FPSGraphView : MonoBehaviour {
 		// PRAGMA MARK - Internal
-		private const int kQueueSize = 256;
+		// NOTE (darren): make sure to change this on the shader side as well!
+		private const int kQueueSize = 200;
 
 		[Header("Outlets")]
 		[SerializeField]
