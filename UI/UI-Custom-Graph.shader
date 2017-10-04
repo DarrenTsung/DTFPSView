@@ -53,7 +53,7 @@ Shader "UI/Custom/Graph"
 #pragma exclude_renderers d3d11 gles
 			#pragma vertex vert
 			#pragma fragment frag
-			#pragma target 2.0
+			#pragma target 3.0
 
 			#include "UnityCG.cginc"
 			#include "UnityUI.cginc"
@@ -81,7 +81,7 @@ Shader "UI/Custom/Graph"
 			fixed4 _TextureSampleAdd;
 			float4 _ClipRect;
 
-			const int QUEUE_SIZE = 200;
+			static const int QUEUE_SIZE = 170;
 
 			float _PercentageQueue[QUEUE_SIZE];
 			int _HeadIndex;

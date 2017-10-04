@@ -7,7 +7,7 @@ namespace DTFPSView.Internal {
 	public class FPSGraphView : MonoBehaviour {
 		// PRAGMA MARK - Internal
 		// NOTE (darren): make sure to change this on the shader side as well!
-		private const int kQueueSize = 200;
+		private const int kQueueSize = 170;
 
 		[Header("Outlets")]
 		[SerializeField]
