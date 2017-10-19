@@ -25,6 +25,10 @@ namespace DTFPSView.Internal {
 
 		private void Update() {
 			float targetFramerate = Application.targetFrameRate;
+			// when targetFramerate is not set it defaults to -1 (uncapped)
+			if (targetFramerate <= 0) {
+				targetFramerate = 60.0f;
+			}
 			float fps = FPSView.FPS;
 
 			float percentage = Mathf.Clamp01(fps / targetFramerate);
